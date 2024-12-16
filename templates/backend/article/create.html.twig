@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}creation d'un article
+{{ parent()}}
+{% endblock %}
+
+{% block body %}
+<section class="container mt-3">
+    <h1 class="text-center">Create an article</h1>
+    {% include 'backend/article/_form.html.twig' with {buttonLabel: 'Creer'} %}
+</section>
+{% endblock %}
